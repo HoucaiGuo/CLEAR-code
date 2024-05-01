@@ -1,2 +1,2 @@
-# Sen2Fill-code
-Sen2Fill: A novel and effective method for gap-filling of Sentinel-2 time-series
+# CLEAR-code
+CLEAR: A novel and effective remote sensing image cloud removal method combining linear regression and residual compensation
