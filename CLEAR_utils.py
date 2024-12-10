@@ -53,31 +53,6 @@ def linear_interpolation(images, masks, ref_images, ref_masks, ref_indices):
     return interp_images
 
 
-def classify_reference_images(ref_images, class_num):
-    """
-    Classify the stacked reference images using KMeans.
-
-    Parameters
-    ----------
-    ref_images: Reference images.
-    class_num: Number of land-cover classes.
-
-    Returns
-    -------
-    class_map: Classification map.
-    class_centers: Vectors of class centers.
-    """
-    X = np.reshape(ref_images,
-                   (ref_images.shape[0] * ref_images.shape[1],
-                    ref_images.shape[2] * ref_images.shape[3]))
-    kmeans = KMeans(n_clusters=class_num, max_iter=1000)
-    kmeans.fit(X)
-    class_map = kmeans.labels_.reshape((ref_images.shape[0], ref_images.shape[1]))
-    class_centers = kmeans.cluster_centers_
-
-    return class_map, class_centers
-
-
 def check_class_map_validity(class_map, class_centers, cloud_mask):
     """
     Check the validity of classification map. If there is no clear pixel within a certain class,
