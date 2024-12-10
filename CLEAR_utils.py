@@ -1,7 +1,7 @@
 import numpy as np
 from tqdm import trange
 from scipy.interpolate import interp1d
-from sklearn.cluster import KMeans, MiniBatchKMeans
+from sklearn.cluster import MiniBatchKMeans
 from sklearn.linear_model import LinearRegression
 from skimage.morphology import disk, binary_erosion
 
