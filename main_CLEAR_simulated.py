@@ -161,7 +161,7 @@ if __name__ == "__main__":
                   f"cloud coverage: {ref_cloud_coverages[image_idx]:.2f}%.")
             ref_image = ref_images[:, :, :, image_idx]
             ref_mask = ref_masks[:, :, image_idx]
-            class_map_1 = check_class_map_validity(class_map, cluster_centers, cloud_mask)
+            class_map_1 = check_class_map_validity(class_map, cluster_centers, ref_mask)
             # choose other interp images
             if image_idx == 0:
                 # image that need to be filled is the first one
