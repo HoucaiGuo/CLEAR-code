@@ -105,9 +105,6 @@ if __name__ == "__main__":
     candidate_cloud_coverages = np.array(candidate_cloud_coverages)
     candidate_DOYs = np.array(candidate_DOYs)
     print(f"There are {candidate_images.shape[3]} candidate images.")
-    print(candidate_indices)
-    print(candidate_cloud_coverages)
-    print(candidate_DOYs)
 
     DOY_diffs = candidate_DOYs - target_DOY
     DOY_diffs_abs = np.abs(DOY_diffs)
@@ -121,16 +118,6 @@ if __name__ == "__main__":
     ref_cloud_coverages = candidate_cloud_coverages[indices]
     ref_indices = candidate_indices[indices]
     print(f"Selected {ref_images.shape[3]} reference images.")
-
-    fig, axes = plt.subplots(2, 24, sharex=True, sharey=True)
-    for idx in range(ref_images.shape[3]):
-        print(idx)
-        image = ref_images[:, :, :, idx]
-        mask = ref_masks[:, :, idx]
-        # image_ma = np.ma.array(data=image, mask=np.stack([mask for i in range(band_num)]))
-        axes[0, idx].imshow(linear_pct_stretch(color_composite(image, [3, 2, 1]), pct=2))
-        axes[1, idx].imshow(mask, cmap="gray")
-    plt.show()
 
     """
     Fill gaps in reference images using linear interpolation
