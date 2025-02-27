@@ -21,17 +21,17 @@ np.set_printoptions(suppress=True, precision=5)
 """
 Parameters
 """
-# threshold for selecting reference images
+# cloud cover threshold for selecting reference images (T)
 ref_cloud_threshold = 15
-# number of used reference images, either an integer or "all"
+# number of used reference images (N), either an integer or "all"
 ref_num = "all"
-# number of land-cover classes
+# number of land-cover classes (K)
 class_num = 12
-# size of local window for selecting similar pixels
+# size of local window for selecting similar pixels (w)
 win_size = 61
 # size for expanding the window
 expand_size = 10
-# number of required similar pixels
+# number of required similar pixels (S)
 similar_num = 20
 # save the results
 save = True
