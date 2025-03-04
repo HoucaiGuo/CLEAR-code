@@ -206,7 +206,7 @@ if __name__ == "__main__":
     print(f"Finished the gap-filling of target cloudy image. Used {total_minutes:.2f} min.")
 
     final_prediction = final_prediction.astype(np.uint16)
-    # write_raster(final_prediction, images_profile, CLEAR_save_path)
+    write_raster(final_prediction, images_profile, CLEAR_save_path)
 
     """
     Show the results
