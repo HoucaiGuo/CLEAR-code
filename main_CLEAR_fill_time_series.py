@@ -32,7 +32,7 @@ ref_cloud_threshold = 15
 
 # Threshold for gap-filling;
 # Images with cloud cover (percentage) higher than the threshold will not be filled.
-fill_cloud_threshold = 15
+fill_cloud_threshold = 75
 
 # Number of used reference images (N), either an integer or "all";
 # A larger value can improve accuracy but reduces computational time;
