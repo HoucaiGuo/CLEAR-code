@@ -9,6 +9,9 @@ E-mail: houcai.guo@unitn.it; guohoucai@qq.com
 
 If you have any questions about our code or need my help in implementing CLEAR for your own research,
 please feel free to contact me via email.
+
+For an input image time-series, CLEAR fills gaps in the images
+where cloud cover is lower than the given threshold.
 """
 import matplotlib.pyplot as plt
 import numpy as np
