@@ -9,6 +9,9 @@ E-mail: houcai.guo@unitn.it; guohoucai@qq.com
 
 If you have any questions about our code or would like to use CLEAR in your own research,
 please feel free to contact me via email.
+
+For an input image time series containing a simulated cloudy image,
+CLEAR fills the gaps using reference images with little or no cloud.
 """
 import matplotlib.pyplot as plt
 import numpy as np
