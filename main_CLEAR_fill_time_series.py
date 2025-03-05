@@ -59,7 +59,7 @@ similar_num = 20
 save = True
 
 # Show each gap-filling result or not
-show = True
+show = False
 
 # Number of spectral bands
 band_num = 4
