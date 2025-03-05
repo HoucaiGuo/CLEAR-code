@@ -5,6 +5,8 @@ CLEAR is a simple, accurate, and efficient remote sensing image gap-filling meth
 
 CLEAR does not require training and is highly flexible, allowing for rapid deployment in your own applications.
 
+![本地图片](Omaha-low-4.png)
+
 ## Data
 Data used in our paper: https://drive.google.com/drive/folders/1e5gDRZQacl8i6lITvRRUugTwQ1OwF60Y?usp=drive_link  
 Each JPEG 2000 file contains stacked time-series images with a data type of uint16 and a value range of 0-10000. Dividing by 10000 yields the surface reflectance.
