@@ -18,6 +18,6 @@ Each JPEG 2000 file contains stacked time-series images with a data type of uint
 **If you are using your own data, please modify line 216 in main_CLEAR_fill_simulated.py and line 276 in main_CLEAR_fill_time_series.py to match your data type.**  
 
 ## Contact
-**If you have any questions about our code or would like to use CLEAR in your own research, please feel free to contact me via email.**  
+**If you have any questions about our code or need my help in implementing CLEAR for your own research, please feel free to contact me via email.**  
 Author: Houcai GUO, PhD student at the University of Trento, Italy  
 E-mail: houcai.guo@unitn.it; guohoucai@qq.com
