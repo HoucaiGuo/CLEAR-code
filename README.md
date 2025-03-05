@@ -3,6 +3,8 @@ This is the official Python implementation of our paper "CLEAR: A Novel Gap-fill
 
 CLEAR is a simple, accurate, and efficient remote sensing image gap-filling method that utilizes cloud-free or low-cloud-cover images from the time series to fill the missing values (e.g., clouds and cloud shadows) in the target image.
 
+CLEAR does not require training and is highly flexible, allowing for rapid deployment in your own applications.
+
 ## Data
 Data used in our paper: https://drive.google.com/drive/folders/1e5gDRZQacl8i6lITvRRUugTwQ1OwF60Y?usp=drive_link  
 Each JPEG 2000 file contains stacked time-series images with a data type of uint16 and a value range of 0-10000. Dividing by 10000 yields the surface reflectance.
