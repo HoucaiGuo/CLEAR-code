@@ -5,6 +5,8 @@ CLEAR is a simple, accurate, and efficient remote sensing image gap-filling meth
 
 CLEAR does not require training and is highly flexible, allowing for rapid deployment in your own applications.
 
+The figure below shows the comparison results of CLEAR and other methods on a simulated cloudy image in an agricutural area. One can observe from the figure that image processed by CLEAR has the highest similarity to the real image and exhibits the lowest error.
+
 ![本地图片](Omaha-low-4.png)
 
 ## Data
