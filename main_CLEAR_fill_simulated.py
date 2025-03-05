@@ -7,7 +7,7 @@ Author: Houcai GUO, PhD student at the University of Trento, Italy
 
 E-mail: houcai.guo@unitn.it; guohoucai@qq.com
 
-If you have any questions about our code or would like to use CLEAR in your own research,
+If you have any questions about our code or need my help in implementing CLEAR for your own research,
 please feel free to contact me via email.
 
 For an input image time series containing a simulated cloudy image,
