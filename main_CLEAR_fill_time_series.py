@@ -112,8 +112,8 @@ if __name__ == "__main__":
     """
     Gap-filling
     """
-    filled_images = images.copy()
-    filled_masks = masks.copy()
+    filled_images = images
+    filled_masks = masks
 
     """
     Select candidate images
@@ -157,7 +157,7 @@ if __name__ == "__main__":
     """
     Gap-filling of the candidate images
     """
-    filled_candidate_images = candidate_images.copy()
+    filled_candidate_images = candidate_images
     for idx in range(candidate_images.shape[3]):
         image_idx = np.argmax(candidate_cloud_covers)
         candidate_DOY = candidate_DOYs[image_idx]
@@ -255,7 +255,7 @@ if __name__ == "__main__":
         """
         if show:
             fig, axes = plt.subplots(1, 5, sharex=True, sharey=True)
-            target_image_ma = np.ma.array(data=target_image.copy(),
+            target_image_ma = np.ma.array(data=target_image,
                                           mask=np.stack([target_mask for i in range(band_num)], axis=2))
             axes[0].imshow(linear_pct_stretch_ma(color_composite_ma(target_image_ma, [3, 2, 1]), pct=2))
             axes[0].set_title("Cloudy image")
