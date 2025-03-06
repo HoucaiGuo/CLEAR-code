@@ -158,7 +158,7 @@ if __name__ == "__main__":
     """
     Gap-filling of the reference images
     """
-    filled_ref_images = ref_images.copy()
+    filled_ref_images = ref_images
     for idx in range(ref_images.shape[3]):
         image_idx = np.argmax(ref_cloud_coverages)
         if ref_cloud_coverages[image_idx] > 0:
@@ -220,7 +220,7 @@ if __name__ == "__main__":
     Show the results
     """
     fig, axes = plt.subplots(1, 5, sharex=True, sharey=True)
-    target_image_ma = np.ma.array(data=target_image.copy(),
+    target_image_ma = np.ma.array(data=target_image,
                                   mask=np.stack([target_mask for i in range(band_num)], axis=2))
     axes[0].imshow(linear_pct_stretch_ma(color_composite_ma(target_image_ma, [3, 2, 1]), pct=2))
     axes[0].set_title("Cloudy image")
