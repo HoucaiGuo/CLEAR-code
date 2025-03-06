@@ -11,7 +11,7 @@ def linear_interpolation(images, masks, ref_images, ref_masks, ref_indices):
     """
     Fill gaps in reference images using linear interpolation.
     """
-    interp_images = ref_images.copy()
+    interp_images = ref_images
     # the value is 1 if the pixel located at (x, y) is cloudy in at least one reference image
     any_cloudy_mask = np.any(ref_masks, axis=2)
     any_cloudy_row_indices, any_cloudy_col_indices = any_cloudy_mask.nonzero()
@@ -191,8 +191,8 @@ def fill_single_image_fast(ref_images,
     """
     Fill a cloudy image using CLEAR.
     """
-    final_prediction = cloudy_image.copy()
-    cloud_mask_1 = cloud_mask.copy()
+    final_prediction = cloudy_image
+    cloud_mask_1 = cloud_mask
     residuals = np.zeros(shape=cloudy_image.shape, dtype=np.float32)
 
     """
@@ -225,7 +225,7 @@ def fill_single_image_fast(ref_images,
             final_prediction[class_cloudy_mask, band_idx] = reg.predict(X_pred)
             residuals[common_mask, band_idx] = y_train - reg.predict(X_train)
 
-    reg_prediction = final_prediction.copy()
+    reg_prediction = final_prediction
 
     """
     Step 2. Iterative residual compensation
