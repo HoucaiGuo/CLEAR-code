@@ -191,8 +191,8 @@ def fill_single_image_fast(ref_images,
     """
     Fill a cloudy image using CLEAR.
     """
-    final_prediction = cloudy_image
-    cloud_mask_1 = cloud_mask
+    final_prediction = cloudy_image.copy()
+    cloud_mask_1 = cloud_mask.copy()
     residuals = np.zeros(shape=cloudy_image.shape, dtype=np.float32)
 
     """
@@ -225,7 +225,7 @@ def fill_single_image_fast(ref_images,
             final_prediction[class_cloudy_mask, band_idx] = reg.predict(X_pred)
             residuals[common_mask, band_idx] = y_train - reg.predict(X_train)
 
-    reg_prediction = final_prediction
+    reg_prediction = final_prediction.copy()
 
     """
     Step 2. Iterative residual compensation
