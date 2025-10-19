@@ -24,8 +24,6 @@ For more information, please refer to our paper.
 Data used in our paper: https://drive.google.com/drive/folders/1e5gDRZQacl8i6lITvRRUugTwQ1OwF60Y?usp=drive_link  
 The images are with uint16 data type and a value range of 0-10000. Dividing by 10000 yields the surface reflectance.
 
-**If you are using your own data, please modify line 216 in main_CLEAR_fill_simulated.py and line 276 in main_CLEAR_fill_time_series.py to match your data type.**  
-
 ## Known issue 
 When cloud and cloud shadow detection is inaccurate (i.e., there are omission errors in the cloud mask), the images processed by CLEAR may contain brighter or darker pixels. This is a common problem shared by most cloud removal algorithms. Applying time-series smoothing or filtering in post-processing may help address this issue.
 
