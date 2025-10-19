@@ -22,7 +22,7 @@ For more information, please refer to our paper.
 
 ## Data
 Data used in our paper: https://drive.google.com/drive/folders/1e5gDRZQacl8i6lITvRRUugTwQ1OwF60Y?usp=drive_link  
-Each JPEG 2000 file contains stacked time-series images with a data type of uint16 and a value range of 0-10000. Dividing by 10000 yields the surface reflectance.
+The images are with uint16 data type and a value range of 0-10000. Dividing by 10000 yields the surface reflectance.
 
 **If you are using your own data, please modify line 216 in main_CLEAR_fill_simulated.py and line 276 in main_CLEAR_fill_time_series.py to match your data type.**  
 
