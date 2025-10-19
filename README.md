@@ -10,6 +10,12 @@ The figure below shows the comparison results of CLEAR and other methods on a si
 
 ![example](Omaha-low.png)
 
+![NDVI](NDVI.png)
+
+
+
+![tile](tile.png)
+
 For more information, please refer to our paper.
 
 ## Data
