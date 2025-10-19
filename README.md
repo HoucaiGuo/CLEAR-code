@@ -7,9 +7,9 @@ CLEAR is a **simple, accurate, and efficient** remote sensing image gap-filling 
 
 ## Example
 The figure below shows the comparison results of CLEAR and other methods on a simulated cloudy image in an agricutural area. One can observe from the figure that the image processed by CLEAR has the highest similarity to the real image and exhibits the lowest error.
-
 ![example](Omaha-low.png)
 
+The figure below shows an example of applying CLEAR in an agricultural area to reconstruct the NDVI time-series. One can observe that the NDVI maps exhibit clear spatial details and growing trends of the crops, and the NDVI values reconstructed by CLEAR align closely with those of cloud-free Sentinel-2 images. Moreover, the fitted NDVI curves reveal distinct temporal patterns for the two crops.
 ![NDVI](NDVI.png)
 
 
