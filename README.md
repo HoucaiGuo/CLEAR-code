@@ -21,7 +21,7 @@ The figure below shows an example of applying CLEAR to fill gaps in Sentinel-2 t
 For more information, please refer to our paper.
 
 ## Data
-Data used in our paper: https://drive.google.com/drive/folders/1e5gDRZQacl8i6lITvRRUugTwQ1OwF60Y?usp=drive_link  
+Data used in our paper: [https://drive.google.com/drive/folders/1e5gDRZQacl8i6lITvRRUugTwQ1OwF60Y?usp=drive_link](https://drive.google.com/drive/folders/1hVNsoRjoYoR4ppALSXwDZrW2LAl3BIVg?usp=drive_link)  
 The images are with uint16 data type and a value range of 0-10000. Dividing by 10000 yields the surface reflectance.
 
 ## Known issue 
