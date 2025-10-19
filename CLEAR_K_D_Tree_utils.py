@@ -4,7 +4,6 @@ from scipy.interpolate import interp1d
 from sklearn.cluster import MiniBatchKMeans
 from sklearn.linear_model import LinearRegression
 from sklearn.neighbors import KDTree
-from joblib import Parallel, delayed
 
 
 def linear_interpolation(images, masks, ref_images, ref_masks, ref_indices):
@@ -201,4 +200,5 @@ def fill_single_image_kd_tree(ref_images,
             final_prediction[target_row_idx, target_col_idx, :] += residual
 
     return reg_prediction, final_prediction
+
 
