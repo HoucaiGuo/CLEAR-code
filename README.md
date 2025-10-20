@@ -1,5 +1,5 @@
 # CLEAR-code
-This is the Python implementation of our paper "CLEAR: A Fast Gap-filling Method for Optical Remote Sensing Images Combining Class-based Linear Regression and Iterative Residual Compensation"
+This is the Python implementation of our paper "CLEAR: A Fast Gap-Filling Method for Optical Remote Sensing Images Combining Class-based Linear Regression and Iterative Residual Compensation"
 
 ![flowchart](flowchart.png)
 
