@@ -169,7 +169,8 @@ def fill_single_image_kd_tree(ref_images,
             common_values = common_pixels[indices, :, :]  # shape = (common_num, band_num, ref_num)
             target_values = ref_images[target_row_idx, target_col_idx, :, :]  # shape = (band_num, ref_num)
 
-            spec_temp_diffs = np.sum((np.abs(common_values - target_values) * np.abs(temporal_weights)), axis=(1, 2))
+            spec_temp_diffs = np.sum(np.abs(common_values - target_values) * 
+                                     np.abs(temporal_weights), axis=(1, 2))  # shape = (common_num, )
 
             similar_indices = np.argsort(spec_temp_diffs)[:similar_num]
             similar_spec_temp_diffs = spec_temp_diffs[similar_indices]
@@ -198,4 +199,5 @@ def fill_single_image_kd_tree(ref_images,
             final_prediction[target_row_idx, target_col_idx, :] += residual
 
     return final_prediction
+
 
