@@ -1,5 +1,5 @@
 # CLEAR-code
-This is the Python implementation of our paper "CLEAR: A Fast Cloud Removal Method for Optical Remote Sensing Images Combining Class-based Linear Regression and Iterative Residual Compensation"
+This is the Python implementation of our paper: H. Guo, Y. Zheng, H. Xu and L. Bruzzone, "CLEAR: A Fast Cloud Removal Method for Optical Remote Sensing Images Combining Class-based Linear Regression and Iterative Residual Compensation," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2026.3651961.
 
 ![flowchart](flowchart.png)
 
